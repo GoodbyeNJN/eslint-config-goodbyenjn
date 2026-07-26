@@ -3,6 +3,6 @@ import { withConfig } from "@goodbyenjn/configs/oxlint";
 export default withConfig(
     {},
     {
-        ignorePatterns: ["tests/__fixtures__/", "tests/__snapshots__/"],
+        ignorePatterns: ["**/__fixtures__", "**/__snapshots__"],
     },
 );

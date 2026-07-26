@@ -5,6 +5,6 @@
             "@/*": ["./src/*"]
         }
     },
-    "include": ["./*", "src", "tests", "scripts"],
-    "exclude": ["tests/__fixtures__", "tests/__snapshots__"]
+    "include": ["./*", "src", "tests"],
+    "exclude": ["**/__fixtures__", "**/__snapshots__"]
 }
