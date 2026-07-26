@@ -36,13 +36,14 @@ const cases = [
     },
 ];
 
-const cwd = path.resolve(import.meta.dirname, "..");
+const cwd = path.resolve(import.meta.dirname);
+
 const oxlint = (config: string, files: string[]) =>
     $(
         "oxlint",
         [
             "--config",
-            path.join("oxlint", config),
+            config,
             "--format",
             "json",
             ...files.map(file => path.join("__fixtures__", file)),
@@ -62,7 +63,5 @@ const format = (output: string) => {
 test.for(cases)("$name", async ({ input, snapshot, config }, { expect }) => {
     const { stdout } = await oxlint(config, input);
 
-    await expect(format(stdout)).toMatchFileSnapshot(
-        path.join(cwd, "__snapshots__/oxlint", snapshot),
-    );
+    await expect(format(stdout)).toMatchFileSnapshot(path.join(cwd, "__snapshots__", snapshot));
 });

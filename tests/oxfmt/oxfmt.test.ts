@@ -36,17 +36,17 @@ const cases = [
     },
 ];
 
-const cwd = path.resolve(import.meta.dirname, "..");
+const cwd = path.resolve(import.meta.dirname);
 
 const oxfmt = (config: string, file: string) =>
     $("cat", [path.join("__fixtures__", file)], {
         spawnOptions: { cwd },
-    }).pipe("oxfmt", ["--config", path.join("oxfmt", config), "--stdin-filepath", file], {
+    }).pipe("oxfmt", ["--config", config, "--stdin-filepath", file], {
         spawnOptions: { cwd },
     });
 
 test.for(cases)("$name", async ({ input, snapshot, config }, { expect }) => {
     const { stdout } = await oxfmt(config, input);
 
-    await expect(stdout).toMatchFileSnapshot(path.join(cwd, "__snapshots__/oxfmt", snapshot));
+    await expect(stdout).toMatchFileSnapshot(path.join(cwd, "__snapshots__", snapshot));
 });
