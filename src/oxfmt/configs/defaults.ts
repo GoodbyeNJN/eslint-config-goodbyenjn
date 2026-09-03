@@ -35,5 +35,7 @@ export const defaults = (options: Options): OxfmtConfig => {
         endOfLine: "lf",
         // 格式化内嵌代码
         embeddedLanguageFormatting: "auto",
+        // 换行时运算符位置，调整到新行开头
+        experimentalOperatorPosition: "start",
     };
 };
