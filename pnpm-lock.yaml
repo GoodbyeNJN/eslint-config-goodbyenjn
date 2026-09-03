@@ -14,9 +14,6 @@ importers:
       '@types/node':
         specifier: ^26.4.1
         version: 26.4.1
-      find-up-simple:
-        specifier: 1.0.1
-        version: 1.0.1
       oxfmt:
         specifier: ^0.66.0
         version: 0.66.0
@@ -33,7 +30,7 @@ importers:
         specifier: ^0.28.5
         version: 0.28.5(rolldown@1.2.7)(typescript@7.0.2)
       typescript:
-        specifier: 7.0.2
+        specifier: ^7.0.2
         version: 7.0.2
       vite-tsconfig-paths:
         specifier: ^6.1.1
@@ -880,10 +877,6 @@ packages:
       picomatch:
         optional: true
 
-  find-up-simple@1.0.1:
-    resolution: {integrity: sha512-afd4O7zpqHeRyg4PfDQsXmlDe2PfdHtJt6Akt8jOWaApLOZk5JXs6VMR29lz03pRe9mpykrRCYIYxaJYcfpncQ==}
-    engines: {node: '>=18'}
-
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -1689,8 +1682,6 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.5):
     optionalDependencies:
       picomatch: 4.0.5
-
-  find-up-simple@1.0.1: {}
 
   fsevents@2.3.3:
     optional: true
