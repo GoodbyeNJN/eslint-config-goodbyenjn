@@ -50,17 +50,17 @@
         "test:ci": "vitest --run"
     },
     "devDependencies": {
-        "@goodbyenjn/utils": "^26.7.4",
-        "@types/node": "^26.1.1",
+        "@goodbyenjn/utils": "^26.9.0",
+        "@types/node": "^26.4.1",
         "find-up-simple": "1.0.1",
-        "oxfmt": "^0.60.0",
-        "oxlint": "^1.75.0",
+        "oxfmt": "^0.66.0",
+        "oxlint": "^1.81.0",
         "oxlint-tsgolint": "^7.0.2001",
-        "rolldown": "^1.2.0",
-        "rolldown-plugin-dts": "^0.27.14",
+        "rolldown": "^1.2.7",
+        "rolldown-plugin-dts": "^0.28.5",
         "typescript": "7.0.2",
         "vite-tsconfig-paths": "^6.1.1",
-        "vitest": "^4.1.10"
+        "vitest": "^5.0.0"
     },
     "peerDependencies": {
         "oxfmt": ">=0.60.0 <1.0.0",
