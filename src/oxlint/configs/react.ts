@@ -7,12 +7,26 @@ import type { DummyRuleMap, OxlintConfig } from "oxlint";
 
 const commonRules: DummyRuleMap = {
     // recommended rules in React but not enabled by default in Oxlint
+    "react/error-boundaries": "warn",
     "react/exhaustive-deps": "warn",
+    "react/globals": "error",
+    "react/immutability": "error",
+    "react/incompatible-library": "warn",
     "react/jsx-no-comment-textnodes": "warn",
     "react/no-array-index-key": "warn",
     "react/no-clone-element": "warn",
+    "react/no-deriving-state-in-effects": "error",
     "react/no-direct-mutation-state": "error",
+    "react/preserve-manual-memoization": "warn",
+    "react/purity": "warn",
+    "react/refs": "warn",
     "react/rules-of-hooks": "error",
+    "react/set-state-in-effect": "error",
+    "react/set-state-in-render": "error",
+    "react/static-components": "warn",
+    "react/use-memo": "warn",
+    "react/unsupported-syntax": "warn",
+    "react/void-use-memo": "warn",
 
     // override recommended rules in Oxlint
 
