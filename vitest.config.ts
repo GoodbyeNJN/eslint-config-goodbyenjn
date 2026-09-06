@@ -1,12 +1,9 @@
-import tsconfigs from "vite-tsconfig-paths";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-    plugins: [
-        tsconfigs({
-            projectDiscovery: "lazy",
-        }),
-    ],
+    resolve: {
+        tsconfigPaths: true,
+    },
     test: {
         testTimeout: 10000,
     },
