@@ -9,6 +9,8 @@ import { yaml } from "./configs/yaml";
 import type { Options } from "./types";
 import type { OxfmtConfig } from "oxfmt";
 
+export type { Options, OxfmtConfig };
+
 export const withConfig = (options: Options = {}, config: OxfmtConfig = {}): OxfmtConfig => {
     return {
         ...defaults(options),

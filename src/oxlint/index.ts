@@ -6,6 +6,8 @@ import { typescript } from "./configs/typescript";
 import type { Options } from "./types";
 import type { OxlintConfig } from "oxlint";
 
+export type { Options, OxlintConfig };
+
 export const withConfig = (options: Options = {}, config: OxlintConfig = {}): OxlintConfig => {
     const javascriptConfig = javascript(options);
     const typescriptConfig = typescript(options);
