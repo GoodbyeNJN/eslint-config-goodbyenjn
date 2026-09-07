@@ -1,6 +1,6 @@
 {
     "name": "@goodbyenjn/configs",
-    "version": "26.7.0",
+    "version": "26.9.0",
     "description": "GoodbyeNJN's configs, including oxlint, oxfmt, and tsconfig.",
     "keywords": [
         "oxfmt",
