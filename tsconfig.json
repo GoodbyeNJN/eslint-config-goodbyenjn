@@ -1,7 +1,7 @@
 {
     "extends": "./tsconfigs/base.json",
     "compilerOptions": {
-        "types": ["node", "@goodbyenjn/utils/global-types"],
+        "types": ["node"],
         "paths": {
             "@/*": ["./src/*"]
         }
