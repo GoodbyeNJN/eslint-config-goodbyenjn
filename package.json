@@ -67,7 +67,6 @@
         "vitest": "^5.0.0"
     },
     "peerDependencies": {
-        "@goodbyenjn/utils": ">=26.9.0",
         "oxfmt": ">=0.64.0 <1.0.0",
         "oxlint": "^1.79.0",
         "oxlint-tsgolint": "^7.0.2001"
