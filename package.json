@@ -17,9 +17,6 @@
         "type": "git",
         "url": "git+https://github.com/GoodbyeNJN/configs.git"
     },
-    "bin": {
-        "create-goodbyenjn-configs": "dist/cli/index.js"
-    },
     "files": [
         "dist",
         "tsconfigs"
