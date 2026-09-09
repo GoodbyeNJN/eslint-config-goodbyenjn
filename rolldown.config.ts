@@ -5,7 +5,6 @@ const dist = "dist";
 
 export default defineConfig({
     input: {
-        "cli/index": "src/cli/index.ts",
         "oxlint/index": "src/oxlint/index.ts",
         "oxfmt/index": "src/oxfmt/index.ts",
     },
@@ -27,7 +26,6 @@ export default defineConfig({
 
     plugins: [
         dts({
-            entry: ["!src/cli/index.ts"],
             tsconfig: "tsconfig.build.json",
         }),
     ],
