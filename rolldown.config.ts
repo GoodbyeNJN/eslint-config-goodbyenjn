@@ -19,6 +19,9 @@ export default defineConfig({
     },
 
     platform: "node",
+    resolve: {
+        mainFields: ["module", "main"],
+    },
 
     treeshake: {
         moduleSideEffects: false,
